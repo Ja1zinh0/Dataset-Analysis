@@ -1,6 +1,6 @@
 # Data Analysis - IMDB Top 1000 Movies Dataset
 
-This project aims to perform data analysis on the [IMDB Top 1000 Movies dataset](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
+This project aims to perform data analysis on the dataset: [IMDB Top 1000 Movies](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
 
 ## Project Status
 
@@ -21,11 +21,11 @@ The project is still in development, and the next steps include:
 
 Please note that the project is a work in progress, and further updates and enhancements will be made.
 
-## Versão em Português(Brasil):
+## Versão em Português (Brasil):
 
 # Análise de Dados - IMDB Top 1000 Movies Dataset
 
-Este projeto tem como objetivo realizar a análise de dados a partir do [dataset IMDB Top 1000 Movies](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
+Este projeto tem como objetivo realizar a análise de dados a partir do dataset: [IMDB Top 1000 Movies](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
 
 ## Status do Projeto
 
