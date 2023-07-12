@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import textwrap
 import numpy as np
 
-df = DataFrame(pd.read_csv('dataset/imdb_cleared.csv'))
+df = pd.read_csv('dataset/imdb_cleared.csv')
 
 def sort():
     df_sorted = df.drop_duplicates(subset=['title']).sort_values(by='rating', ascending=False)

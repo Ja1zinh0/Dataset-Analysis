@@ -1,8 +1,6 @@
 import pandas as pd
-from pandas import DataFrame
 
-dataframe = pd.read_csv('dataset/imdb_raw.csv')
-df = DataFrame(dataframe)
+df = pd.read_csv('dataset/imdb_raw.csv')
 df['gross'] = df['gross'].str.replace('M', '').str.replace('$', '').astype(float)
 df['release_year'] = df['release_year'].str.replace('(','').str.replace(')','')
 df['runtime'] = df['runtime'].str.replace(" min", '')
