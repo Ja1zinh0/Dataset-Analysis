@@ -21,6 +21,8 @@ The project is still in development, and the next steps include:
 
 Please note that the project is a work in progress, and further updates and enhancements will be made.
 
+(Obs: Note that the screen.py doesn't do anything right now, i was just making a few tests by myself)
+
 ## Versão em Português (Brasil):
 
 # Análise de Dados - IMDB Top 1000 Movies Dataset
@@ -43,3 +45,5 @@ O projeto está em desenvolvimento e os próximos passos incluem:
 
 - Implementar funcionalidades para análises mais aprofundadas e complexas.
 - Implementação de uma tela para gerar os gráficos.
+
+(Obs: O arquivo screen.py não faz nada no momento, eu fiz ele apenas para realizar alguns testes)
