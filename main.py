@@ -1,26 +1,31 @@
 import pandas as pd
-from pandas import DataFrame
 import matplotlib.pyplot as plt
 import textwrap
 import numpy as np
 
 df = pd.read_csv('dataset/imdb_cleared.csv')
 
-def sort():
-    df_sorted = df.drop_duplicates(subset=['title']).sort_values(by='rating', ascending=False)
-    head_sorted = df_sorted.head()
-    x_values = np.arange(len(head_sorted))
-    plt.bar(x_values, head_sorted['rating'], width=0.3)
-    plt.xlabel('List of Movies')
-    plt.ylabel('Rating')
-    plt.title('Top 5 highest rating')
-    for index, value in enumerate(head_sorted['rating']):
-        plt.text(x=index, y=value, s=str(value), ha='center', va='bottom')
+def show_top5():
+    df_sorted = df.drop_duplicates(subset=['title']).sort_values(by='rating', ascending=False).head()
+    plotChart(df_sorted['rating'], 'List of Movies', 'Rating', 'Top 5 highest rating', df_sorted['title'])
 
-    rotulos = [textwrap.shorten(label, width=30, placeholder="...") for label in head_sorted['title']]
-    plt.xticks(x_values, rotulos, rotation=45, ha='right')
+def genres():
+    top_genres = df['genre'].value_counts().head()
+    plotChart(top_genres, 'Genres', 'Frequency of each genre', 'Top 5 frequent genres', top_genres.index)
+
+def plotChart(dataframe, xlabel, ylabel, title, labels=[]):
+    plt.figure(num='Chart')
+    x_values = np.arange(len(dataframe))
+    plt.bar(x_values, dataframe, color='steelblue', width=0.3, align='center')
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    for index, value in enumerate(dataframe):
+        plt.text(index, value, str(value), ha='center', va='bottom')
+    plt.xticks(x_values, labels, rotation=45, ha='right')
     plt.tight_layout()
-
     plt.show()
-    
-sort()
+
+
+genres()
+show_top5()
