@@ -2,26 +2,9 @@
 
 This project aims to perform data analysis on the dataset: [IMDB Top 1000 Movies](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
 
-## Project Status
-
-⚠️ **Under Development** ⚠️
-
-The project is currently under development and aims to extract insights from the clean dataset.
-
 ## Functionality
 
-- Implementation of a screen to generate various charts based on the collected insights.
-
-## Next Steps
-
-The project is still in development, and the next steps include:
-
-- Implementing features for more in-depth and complex analysis.
-- Implementing a screen to generate the charts.
-
-Please note that the project is a work in progress, and further updates and enhancements will be made.
-
-(Obs: Note that the screen.py doesn't do anything right now, i was just making a few tests by myself)
+- Generate charts based on insights, for example the Top 5 rated movies.
 
 ## Versão em Português (Brasil):
 
@@ -29,21 +12,7 @@ Please note that the project is a work in progress, and further updates and enha
 
 Este projeto tem como objetivo realizar a análise de dados a partir do dataset: [IMDB Top 1000 Movies](https://www.kaggle.com/datasets/arthurchongg/imdb-top-1000-movies?datasetId=3464851).
 
-## Status do Projeto
-
-⚠️ **Em desenvolvimento** ⚠️
-
-O projeto está em desenvolvimento e tem como objetivo extrair insights a partir do dataset limpo.
 
 ## Funcionalidade
 
-- Implementação de uma tela para gerar diversos gráficos sobre os insights coletados.
-
-## Próximos Passos
-
-O projeto está em desenvolvimento e os próximos passos incluem:
-
-- Implementar funcionalidades para análises mais aprofundadas e complexas.
-- Implementação de uma tela para gerar os gráficos.
-
-(Obs: O arquivo screen.py não faz nada no momento, eu fiz ele apenas para realizar alguns testes)
+- Gerar gráficos baseados em insights como por exemplo quais foram os filmes de maior rating.
